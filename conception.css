@@ -40,7 +40,27 @@
 	justify-content: space-between;
 	align-items: flex-end;
 	color: black;
-	
+}
+
+.class b{
+  color: black;
+  position: relative;
+
+}
+
+.class b::before{
+  content: '';
+  width: 0;
+  position: absolute;
+  bottom: -3px;
+  height: 2px;
+  background-color:  #523d35fc;
+  transition: 0.5s;
+
+}
+
+.class b:hover::before{
+ width: 100%;
 }
 
 .para{
@@ -107,7 +127,77 @@
 }
 /*partie 3 */
 
+
 /*partie 4 */
+.promotion{
+	width: 100%;
+	height: 260px;
+	display: flex;
+	justify-content: space-evenly;
+
+}
+
+.ROOM1{
+	height: 220px;
+	width: 400px;
+	background-image: url(conception.jpg);
+	background-size: 100% 220px;
+	position: relative;
+	top: 20px;	
+	text-align: center;
+
+}
+.living{
+	background-color: #ffeb3b5c;
+	width: 360px;
+	height: 180px;
+	color: yellow;
+	position: relative;
+	right: -20px;
+	top: 20px;
+}
+
+.ROOM2{
+	height: 220px;
+	width: 400px;
+	background-image: url(dining-room.jpg);
+	background-size: 100% 220px;
+	position: relative;
+	top: 20px;
+	text-align: center;
+	justify-content: center;
+
+}
+.dining{
+  background-color: #79554845;
+	width: 360px;
+	height: 180px;
+	color: #c79381;
+	position: relative;
+	right: -20px;
+	top: 20px;
+}
+
+.promotion p{
+	font-weight: 100;
+  padding: 0.6em 1.8em;
+  display: inline-block;
+  border-radius: 0.7em;
+  transition: 0.3s;
+  background-color: #00000080;
+  color:white;
+  position: relative;
+}
+
+.promotion p:hover{
+	border: 2px solid;
+}
+
+/*partie 4 */
+
+
+
+/*partie 5 */
 
 .message{
 	height: 600px;
@@ -153,4 +243,58 @@ message input{
 .message p:hover{
 	border: 2px solid ;
 }
-/*partie 4 */
+/*partie 5 */
+
+
+
+/*footer*/
+.footer{
+	background-color: #9e9e9e33;
+}
+.container1{
+	padding: 30px;
+	text-align: center;
+	width: 100%;
+	height: 100px;
+}
+.container1 input{
+	background-color: none;
+	border: none;
+	color: black;
+	text-align: center;
+
+}
+.container2{
+	
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.left{
+	text-align: center;
+	justify-content: center;
+
+}
+.photos img{
+	width: 30px;
+	height: 30px;
+} 
+.right{
+	width: 70%;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.right .colunm{
+  display: flex;
+  flex-direction: column;
+}
+
+.right .colunm .link{
+  color: #4F5665;
+  margin-top: 1em;
+}
+
+/*footer*/
